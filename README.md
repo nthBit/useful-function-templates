@@ -1,5 +1,7 @@
-<!-- A collection of useful functions and their uses -->
+<!-- A collection of useful custom functions -->
 
-<!-- 1. sumOfTripledEvens function: This uses .map .filter and .reduce -->
+<!-- 1. sumOfTripledEvens function: .map .filter and .reduce -->
 
-<!-- camelizeString function: This  -->
+<!-- 2. camelizeString function: .split .map and .join  -->
+
+<!-- 3. filterRange function: .filter -->

@@ -1,6 +1,6 @@
 // sumOfTripledEvens function
 
-const array = [1, 2, 3, 4, 5];
+let array = [1, 2, 3, 4, 5];
 
 function sumOfTripledEvens(array) {
   return array
@@ -13,7 +13,7 @@ console.log(sumOfTripledEvens(array));
 
 // camelizeString function
 
-const inputString = "my-string";
+let inputString = "my-string";
 
 function camelizeString(str) {
   return str
@@ -29,3 +29,14 @@ function camelizeString(str) {
 }
 
 console.log(camelizeString(inputString));
+
+// filterRange function
+
+let numArray = [5, 3, 8, 1, 9];
+
+
+function filterRange(arr, a, b) {
+    return arr.filter((num) => (num >= a && num <= b));
+}
+
+console.log(filterRange(numArray, 1, 4));
