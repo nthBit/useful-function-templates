@@ -1,6 +1,6 @@
 // sumOfTripledEvens function
 
-let array = [1, 2, 3, 4, 5];
+let numArray = [1, 2, 3, 4, 5];
 
 function sumOfTripledEvens(array) {
   return array
@@ -9,7 +9,7 @@ function sumOfTripledEvens(array) {
     .reduce((acc, curr) => acc + curr);
 }
 
-console.log(sumOfTripledEvens(array));
+console.log(sumOfTripledEvens(numArray));
 
 // camelizeString function
 
@@ -30,13 +30,44 @@ function camelizeString(str) {
 
 console.log(camelizeString(inputString));
 
-// filterRange function
+// filterRange function (creates new array)
 
-let numArray = [5, 3, 8, 1, 9];
+let numArray1 = [5, 3, 8, 1, 9];
 
 
 function filterRange(arr, a, b) {
     return arr.filter((num) => (num >= a && num <= b));
 }
 
-console.log(filterRange(numArray, 1, 4));
+console.log(filterRange(numArray1, 1, 4));
+
+// filterRangeInPlace function (edits old array)
+
+let numArray2 = [5, 3, 8, 1, 9];
+
+function filterRangeInPlace(arr, a, b) {
+    for (let i = 0; i < arr.length; i++) {
+        val = arr[i];
+        if (val < a || val > b) {
+            arr.splice(i, 1);
+            i--;
+        }
+    }
+}
+
+filterRangeInPlace(numArray2, 1, 4);
+console.log(numArray2);
+
+// sortDecreasingOrder Function
+
+let numArray3 = [5, 3, 8, 1, 9];
+
+function decreasingSortInPlace(arr) {
+    arr.sort().reverse();
+}
+
+decreasingSortInPlace(numArray3);
+console.log(numArray3);
+
+
+

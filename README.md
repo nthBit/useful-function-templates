@@ -5,3 +5,6 @@
 <!-- 2. camelizeString function: .split .map and .join  -->
 
 <!-- 3. filterRange function: .filter -->
+
+<!-- 4. filterRangeInPlace: ... -->
+<!--  -->
