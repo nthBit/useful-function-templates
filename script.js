@@ -58,16 +58,24 @@ function filterRangeInPlace(arr, a, b) {
 filterRangeInPlace(numArray2, 1, 4);
 console.log(numArray2);
 
-// sortDecreasingOrder Function
+// decreasingSortInPlace function
 
-let numArray3 = [5, 3, 8, 1, 9];
+let numArray3 = [100, 20, 3];
 
 function decreasingSortInPlace(arr) {
-    arr.sort().reverse();
+    arr.sort((a, b) => b - a);
 }
 
 decreasingSortInPlace(numArray3);
 console.log(numArray3);
+
+// copySorted function
+
+let numArray4 = [5, 3, 8, 1, 9];
+
+function copySorted(arr) {
+    arr.toSorted();
+}
 
 
 
