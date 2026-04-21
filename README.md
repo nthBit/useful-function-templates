@@ -8,4 +8,6 @@
 
 <!-- 4. filterRangeInPlace function: .splice -->
 
-<!-- 5. decreasingSortInPlace function: .sort .reverse -->
+<!-- 5. decreasingSortInPlace function: .sort -->
+
+<!-- 6. copySorted function: .toSorted -->

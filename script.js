@@ -74,8 +74,9 @@ console.log(numArray3);
 let numArray4 = [5, 3, 8, 1, 9];
 
 function copySorted(arr) {
-    arr.toSorted();
+    return arr.toSorted((a, b) => a - b);
 }
 
-
+let sortedArray = copySorted(numArray4);
+console.log(sortedArray);
 
