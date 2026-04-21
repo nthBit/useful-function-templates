@@ -6,5 +6,6 @@
 
 <!-- 3. filterRange function: .filter -->
 
-<!-- 4. filterRangeInPlace: ... -->
-<!--  -->
+<!-- 4. filterRangeInPlace function: .splice -->
+
+<!-- 5. decreasingSortInPlace function: .sort .reverse -->
