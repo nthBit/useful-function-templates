@@ -11,3 +11,5 @@
 <!-- 5. decreasingSortInPlace function: .sort -->
 
 <!-- 6. copySorted function: .toSorted -->
+
+<!-- 7. shuffle function: .sort-->

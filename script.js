@@ -80,3 +80,14 @@ function copySorted(arr) {
 let sortedArray = copySorted(numArray4);
 console.log(sortedArray);
 
+// shuffle function
+
+let numArray5 = [1, 2, 3];
+
+function shuffle(arr) {
+    arr.sort(() => (Math.random() - 0.5));
+}
+
+shuffle(numArray5);
+console.log(numArray5);
+
