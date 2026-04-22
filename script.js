@@ -91,3 +91,19 @@ function shuffle(arr) {
 shuffle(numArray5);
 console.log(numArray5);
 
+// unique function
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+function unique(arr) {
+    let uniqueArray = [];
+    for (const string of arr) {
+        if (!(uniqueArray.includes(string)))
+            uniqueArray.push(string);
+    }
+    return uniqueArray;
+}
+
+console.log(unique(strings));

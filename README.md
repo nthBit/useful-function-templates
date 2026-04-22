@@ -13,3 +13,5 @@
 <!-- 6. copySorted function: .toSorted -->
 
 <!-- 7. shuffle function: .sort-->
+
+<!-- 8. unique function: .includes .push -->
