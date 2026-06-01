@@ -118,9 +118,9 @@ let users = [ john, pete, mary ];
 
 let names = users.map(item => item.name);
 
-console.log(names); // John, Pete, Mary
+console.log(names);
 
-// mapToObjects
+// mapToObjects function
 
 let dan = { name: "Dan", surname: "Smith", id: 1 };
 let sam = { name: "Sam", surname: "Hunt", id: 2 };
@@ -133,5 +133,19 @@ let peopleMapped = people.map(person => ({
     id: person.id,
 }));
 
-console.log( peopleMapped[0].id ) // 1
-console.log( peopleMapped[0].fullName ) // John Smith
+console.log( peopleMapped[0].id )
+console.log( peopleMapped[0].fullName )
+
+// sortByAge function
+
+function sortByAge(arr) {
+  return arr.sort((a, b) => a.age - b.age);
+}
+
+let tom = { name: "Tom", age: 25 };
+let dick = { name: "Dick", age: 30 };
+let harry = { name: "Harry", age: 28 };
+
+let arr = [ tom, dick, harry ];
+
+console.log(sortByAge(arr));
