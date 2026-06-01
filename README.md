@@ -1,5 +1,3 @@
-<!-- A collection of useful custom functions -->
-
 <!-- 1. sumOfTripledEvens function: .map .filter and .reduce -->
 
 <!-- 2. camelizeString function: .split .map and .join  -->
@@ -15,3 +13,7 @@
 <!-- 7. shuffle function: .sort-->
 
 <!-- 8. unique function: .includes .push -->
+
+<!-- 9. mapToNames function: .map -->
+
+<!-- 10. mapToNames function: .map -->

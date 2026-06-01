@@ -107,3 +107,31 @@ function unique(arr) {
 }
 
 console.log(unique(strings));
+
+// mapToNames function
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [ john, pete, mary ];
+
+let names = users.map(item => item.name);
+
+console.log(names); // John, Pete, Mary
+
+// mapToObjects
+
+let dan = { name: "Dan", surname: "Smith", id: 1 };
+let sam = { name: "Sam", surname: "Hunt", id: 2 };
+let jack = { name: "Jack", surname: "Key", id: 3 };
+
+let people = [ dan, sam, jack ];
+
+let peopleMapped = people.map(person => ({
+    fullName: `${person.name} ${person.surname}`,
+    id: person.id,
+}));
+
+console.log( peopleMapped[0].id ) // 1
+console.log( peopleMapped[0].fullName ) // John Smith
