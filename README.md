@@ -21,3 +21,5 @@
 <!-- 11. sortByAge function: .sort -->
 
 <!-- 12. getAverageAge function: .reduce -->
+
+<!-- 13. groupById function: .reduce -->
