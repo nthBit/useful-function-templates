@@ -19,3 +19,5 @@
 <!-- 10. mapToNames function: .map -->
 
 <!-- 11. sortByAge function: .sort -->
+
+<!-- 12. getAverageAge function: .reduce -->

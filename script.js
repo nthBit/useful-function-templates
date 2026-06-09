@@ -1,151 +1,166 @@
-// sumOfTripledEvens function
+// // sumOfTripledEvens function
 
-let numArray = [1, 2, 3, 4, 5];
+// let numArray = [1, 2, 3, 4, 5];
 
-function sumOfTripledEvens(array) {
-  return array
-    .filter((num) => num % 2 === 0)
-    .map((num) => num * 3)
-    .reduce((acc, curr) => acc + curr);
-}
+// function sumOfTripledEvens(array) {
+//   return array
+//     .filter((num) => num % 2 === 0)
+//     .map((num) => num * 3)
+//     .reduce((acc, curr) => acc + curr);
+// }
 
-console.log(sumOfTripledEvens(numArray));
+// console.log(sumOfTripledEvens(numArray));
 
-// camelizeString function
+// // camelizeString function
 
-let inputString = "my-string";
+// let inputString = "my-string";
 
-function camelizeString(str) {
-  return str
-    .split('-')
-    .map((word, index) => {
-      if (index === 0) {
-        return word;
-      } else {
-        return word[0].toUpperCase() + word.slice(1);
-      }
-    })
-    .join('');
-}
+// function camelizeString(str) {
+//   return str
+//     .split('-')
+//     .map((word, index) => {
+//       if (index === 0) {
+//         return word;
+//       } else {
+//         return word[0].toUpperCase() + word.slice(1);
+//       }
+//     })
+//     .join('');
+// }
 
-console.log(camelizeString(inputString));
+// console.log(camelizeString(inputString));
 
-// filterRange function (creates new array)
+// // filterRange function (creates new array)
 
-let numArray1 = [5, 3, 8, 1, 9];
+// let numArray1 = [5, 3, 8, 1, 9];
 
 
-function filterRange(arr, a, b) {
-    return arr.filter((num) => (num >= a && num <= b));
-}
+// function filterRange(arr, a, b) {
+//     return arr.filter((num) => (num >= a && num <= b));
+// }
 
-console.log(filterRange(numArray1, 1, 4));
+// console.log(filterRange(numArray1, 1, 4));
 
-// filterRangeInPlace function (edits old array)
+// // filterRangeInPlace function (edits old array)
 
-let numArray2 = [5, 3, 8, 1, 9];
+// let numArray2 = [5, 3, 8, 1, 9];
 
-function filterRangeInPlace(arr, a, b) {
-    for (let i = 0; i < arr.length; i++) {
-        val = arr[i];
-        if (val < a || val > b) {
-            arr.splice(i, 1);
-            i--;
-        }
-    }
-}
+// function filterRangeInPlace(arr, a, b) {
+//     for (let i = 0; i < arr.length; i++) {
+//         val = arr[i];
+//         if (val < a || val > b) {
+//             arr.splice(i, 1);
+//             i--;
+//         }
+//     }
+// }
 
-filterRangeInPlace(numArray2, 1, 4);
-console.log(numArray2);
+// filterRangeInPlace(numArray2, 1, 4);
+// console.log(numArray2);
 
-// decreasingSortInPlace function
+// // decreasingSortInPlace function
 
-let numArray3 = [100, 20, 3];
+// let numArray3 = [100, 20, 3];
 
-function decreasingSortInPlace(arr) {
-    arr.sort((a, b) => b - a);
-}
+// function decreasingSortInPlace(arr) {
+//     arr.sort((a, b) => b - a);
+// }
 
-decreasingSortInPlace(numArray3);
-console.log(numArray3);
+// decreasingSortInPlace(numArray3);
+// console.log(numArray3);
 
-// copySorted function
+// // copySorted function
 
-let numArray4 = [5, 3, 8, 1, 9];
+// let numArray4 = [5, 3, 8, 1, 9];
 
-function copySorted(arr) {
-    return arr.toSorted((a, b) => a - b);
-}
+// function copySorted(arr) {
+//     return arr.toSorted((a, b) => a - b);
+// }
 
-let sortedArray = copySorted(numArray4);
-console.log(sortedArray);
+// let sortedArray = copySorted(numArray4);
+// console.log(sortedArray);
 
-// shuffle function
+// // shuffle function
 
-let numArray5 = [1, 2, 3];
+// let numArray5 = [1, 2, 3];
 
-function shuffle(arr) {
-    arr.sort(() => (Math.random() - 0.5));
-}
+// function shuffle(arr) {
+//     arr.sort(() => (Math.random() - 0.5));
+// }
 
-shuffle(numArray5);
-console.log(numArray5);
+// shuffle(numArray5);
+// console.log(numArray5);
 
-// unique function
+// // unique function
 
-let strings = ["Hare", "Krishna", "Hare", "Krishna",
-  "Krishna", "Krishna", "Hare", "Hare", ":-O"
-];
+// let strings = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
 
-function unique(arr) {
-    let uniqueArray = [];
-    for (const string of arr) {
-        if (!(uniqueArray.includes(string)))
-            uniqueArray.push(string);
-    }
-    return uniqueArray;
-}
+// function unique(arr) {
+//     let uniqueArray = [];
+//     for (const string of arr) {
+//         if (!(uniqueArray.includes(string)))
+//             uniqueArray.push(string);
+//     }
+//     return uniqueArray;
+// }
 
-console.log(unique(strings));
+// console.log(unique(strings));
 
-// mapToNames function
+// // mapToNames function
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
 
-let users = [ john, pete, mary ];
+// let users = [ john, pete, mary ];
 
-let names = users.map(item => item.name);
+// let names = users.map(item => item.name);
 
-console.log(names);
+// console.log(names);
 
-// mapToObjects function
+// // mapToObjects function
 
-let dan = { name: "Dan", surname: "Smith", id: 1 };
-let sam = { name: "Sam", surname: "Hunt", id: 2 };
-let jack = { name: "Jack", surname: "Key", id: 3 };
+// let dan = { name: "Dan", surname: "Smith", id: 1 };
+// let sam = { name: "Sam", surname: "Hunt", id: 2 };
+// let jack = { name: "Jack", surname: "Key", id: 3 };
 
-let people = [ dan, sam, jack ];
+// let people = [ dan, sam, jack ];
 
-let peopleMapped = people.map(person => ({
-    fullName: `${person.name} ${person.surname}`,
-    id: person.id,
-}));
+// let peopleMapped = people.map(person => ({
+//     fullName: `${person.name} ${person.surname}`,
+//     id: person.id,
+// }));
 
-console.log( peopleMapped[0].id )
-console.log( peopleMapped[0].fullName )
+// console.log( peopleMapped[0].id )
+// console.log( peopleMapped[0].fullName )
 
-// sortByAge function
+// // sortByAge function
 
-function sortByAge(arr) {
-  return arr.sort((a, b) => a.age - b.age);
-}
+// function sortByAge(arr) {
+//   return arr.sort((a, b) => a.age - b.age);
+// }
 
-let tom = { name: "Tom", age: 25 };
-let dick = { name: "Dick", age: 30 };
-let harry = { name: "Harry", age: 28 };
+// let tom = { name: "Tom", age: 25 };
+// let dick = { name: "Dick", age: 30 };
+// let harry = { name: "Harry", age: 28 };
 
-let arr = [ tom, dick, harry ];
+// let arr = [ tom, dick, harry ];
 
-console.log(sortByAge(arr));
+// console.log(sortByAge(arr));
+
+// // getAverageAge function
+
+// function getAverageAge(users) {
+//   return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+// }
+
+// let squeex = { name: "Squeex", age: 43 };
+// let ludwig = { name: "Ludwig", age: 30 };
+// let fuslie = { name: "Fuslie", age: 33 };
+
+// let objArray = [ squeex, ludwig, fuslie ];
+
+// console.log( getAverageAge(objArray) );
+
